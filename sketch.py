@@ -1,8 +1,8 @@
 from vector import Vector
 
 
-class sketch:
-    def __init__(self, text: str, k, d):
+class Sketch:
+    def __init__(self, text, k, d):
         freq = []
         for i in range(d):
             freq.append(0)
