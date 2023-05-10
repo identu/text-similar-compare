@@ -1,7 +1,7 @@
 import math
 
 
-class vector:
+class Vector:
 
     def __init__(self, d) -> None:
         # vector's dimension
@@ -23,13 +23,13 @@ class vector:
         result = []
         for i in range(0, self._dimension):
             result.append(self._coords[i] + other._coords[i])
-        return vector(result)
+        return Vector(result)
 
     def __sub__(self, other):
         result = []
         for i in range(0, self._dimension):
             result.append(self._coords[i] - other._coords[i])
-        return vector(result)
+        return Vector(result)
 
     def __abs__(self):
         sum = 0
@@ -42,7 +42,7 @@ class vector:
         result = []
         for i in range(0, self._dimension):
             result.append(self._coords[i] * scale)
-        return vector(result)
+        return Vector(result)
 
     # dot multiply
     def dot(self, other):
@@ -56,6 +56,6 @@ class vector:
         result = []
         for i in range(0, self._dimension):
             result.append(self._coords[i] / length)
-        return vector(result)
+        return Vector(result)
 
 
